@@ -1,0 +1,54 @@
+.tarjeta-volumenes {
+    max-width: 320px;
+    max-height: 472.438px;
+    background-color: #0D0000;
+    color: white;
+    border-radius: 3px;
+    overflow: hidden;
+    text-align: center;
+    font-size: 1rem;
+}
+.tarjeta-volumenes > h3 {
+    font-size: 1em;
+    font-weight: bold;
+    margin: 1rem;
+}
+.tarjeta-volumenes > p {
+    font-size: 0.7em;
+    margin: 0px 0.5rem 2rem 0.5rem;
+}
+.overflow-hidden {
+    overflow: hidden;
+}
+.tarjeta-volumenes > img {
+    display: block;
+    border: 0.5px solid white;
+    margin: 1rem auto 0 auto;
+    height: 230px;
+}
+.boton-descarga {
+    font-size: 1.3rem;
+    text-decoration: none;
+    padding: 0.7rem;
+    color: white;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid transparent;
+    border-radius: 3px;
+}
+.boton-descarga:hover {
+    transition: 0.7s;
+    background-color: white;
+    color: #0D0000;
+}
+@media (max-width: 1023px){
+    .boton-descarga {
+        font-size: 1.3rem;
+        text-decoration: none;
+        padding: 0.7rem;
+        background-color: white;
+        color: #0D0000;
+        margin-bottom: 1rem;
+        border-bottom: 1px solid transparent;
+        border-radius: 3px;
+    }
+}

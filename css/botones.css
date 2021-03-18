@@ -1,0 +1,47 @@
+/* estilo de boton usado en la barra de navegacion */
+.boton {
+  position: relative;
+  padding: 1em 1.5em;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  font-size: 18px;
+}
+@media (min-width: 918px) {
+  .boton.efecto-marco-animado.efecto-marco-animado::after,
+  .boton.efecto-marco-animado.efecto-marco-animado::before {
+    content: "";
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    border: 2px solid;
+    transition: all 0.6s ease;
+    border-radius: 2px;
+  }
+  .boton.efecto-marco-animado.efecto-marco-animado::after {
+    bottom: 0;
+    right: 0;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: black;
+    border-right-color: black;
+  }
+  .boton.efecto-marco-animado.efecto-marco-animado::before {
+    top: 0;
+    left: 0;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-top-color: black;
+    border-left-color: black;
+  }
+  .boton.efecto-marco-animado.efecto-marco-animado:hover:after,
+  .boton.efecto-marco-animado.efecto-marco-animado:hover:before {
+    width: 98%;
+    height: 94%;
+  }
+  .efecto-marco-animado-activo {
+    border: 2px solid black;
+  }
+}
+/* fin estilo de boton usado en la barra de navegacion */

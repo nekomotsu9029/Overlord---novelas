@@ -1,0 +1,153 @@
+/* instrucciones de contenido general */
+body {
+  background: linear-gradient(90deg, #161122 21px, transparent 1%) center,
+    linear-gradient(#161122 21px, transparent 1%) center, #a799cc;
+  background-size: 22px 22px;
+  font-family: "Saira Semi Condensed", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+/* instrucciones header > barra de navegacion */
+.barra-navegacion {
+  background-color: #593448;
+  display: flex;
+  flex-wrap: wrap;
+}
+.lista-navegacion {
+  list-style: none;
+  width: 100%;
+  padding: 1rem 1rem;
+  margin: 0px;
+}
+.lista-navegacion > li {
+  text-align: center;
+  margin: 0% 2%;
+}
+.cover {
+  background-image: url("../img/cover1.jpg");
+  height: 300px;
+  color: white;
+  background-size: cover;
+  background-position: top left;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: darken;
+}
+/*Debido a que la barra de navegacion solo se ve correctamente en pantallas mayores a 917px hare que los elemento li de la barra se pongan uno bajo del otro en pantallas pequeñas, esto seria mejor con javaScript usando un boton pero no se puede XD*/
+@media (max-width: 917px) {
+  .enlace {
+    font-size: 3rem;
+    padding-bottom: 0.9rem;
+  }
+  .enlace > a {
+    border: 2px solid black;
+  }
+}
+@media (min-width: 918px) {
+  .lista-navegacion {
+    display: flex;
+  }
+  .enlace {
+    padding-top: 1.1rem;
+    font-size: 1.2rem;
+  }
+}
+/* fin instrucciones header > barra de navegacion */
+
+/* instucciones main */
+.fondo-amarillento {
+  background-color: #f2ec9b;
+  color: #593448;
+}
+.br-5 {
+  border-radius: 5px;
+}
+.mb-2 {
+  margin-bottom: 2rem;
+}
+.float-rigth {
+  float: right;
+}
+.personaje-blueRose {
+  max-height: 240px;
+  max-width: 100%;
+  border-bottom: 2px solid black;
+}
+.landgrave {
+  max-width: 100%;
+}
+.texto-blanco-70 {
+  color: rgba(255, 255, 255, 0.7);
+}
+.Enri {
+  float: right;
+  max-height: 150px;
+}
+.overflow-hidden{
+  overflow: hidden;
+}
+.centrar-texto{
+  text-align: center;
+}
+.titulo-formulario{
+  text-align: center;
+  color: white;
+  font-size: 3rem;
+}
+.campo-formulario {
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+  background-color: transparent;
+  width: 90%;
+  height: 3rem;
+  border: 2px solid transparent;
+  border-bottom: 1px solid white;
+  margin: 0.5rem 5%;
+}
+.campo-formulario:hover {
+  color: white;
+  font-size: 1rem;
+  background-color: transparent;
+  width: 90%;
+  height: 3rem;
+  border: 2px solid white;
+  margin: 0.5rem 5%;
+}
+.textArea-formulario {
+  flex-wrap: wrap;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.3rem;
+  background-color: transparent;
+  width: 95%;
+  height: 3rem;
+  border: 2px solid transparent;
+  border-bottom: 1px solid white;
+  margin: 0.5rem 2.5%;
+}
+.textArea-formulario:hover {
+
+  border: 2px solid white;
+}
+.boton-formulario {
+  border-radius: 5px;
+  font-size: 1rem;
+  border: 2px solid white;
+  color: white;
+  background-color: transparent;
+  height: 2.5rem;
+  width: 95%;
+  margin: 0.5rem 2.5%;
+}
+.boton-formulario:hover {
+  color: #161122;
+  border: 2px solid white;
+  background-color: white;
+}
+/* instrucciones footer */
+footer {
+  min-height: 5rem;
+  background-color: #593448;
+}
